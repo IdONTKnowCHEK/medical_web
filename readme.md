@@ -56,7 +56,7 @@ The backend service loads environment variables from `backend/.env`. Copy and cu
 
 ```bash
 # cd ../medical_web/backend
-cp /.env.example backend/.env
+cp .env.example .env
 ```  
 ### Installing Ollama Model
 
