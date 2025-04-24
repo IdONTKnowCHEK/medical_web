@@ -1,6 +1,6 @@
 # Medcial Web Application
 
-A full-stack application providing medical web services with a FastAPI backend and a Vue.js frontend.
+A full-stack application providing medical web services with a FastAPI backend and a React.js frontend.
 
 ## Table of Contents
 - [Overview](#overview)
