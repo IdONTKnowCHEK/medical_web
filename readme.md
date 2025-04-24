@@ -5,6 +5,7 @@ A full-stack application providing medical web services with a FastAPI backend a
 ## Table of Contents
 - [Overview](#overview)
 - [Installation](#installation)
+- [Prerequisites](#prerequisites)
 - [Environment Variables](#environment-variables)
 - [Running Locally](#running-locally)
 - [Running with Docker](#running-with-docker)
@@ -15,6 +16,12 @@ This repository contains two main services:
 
 - **backend**: A FastAPI service that provides RESTful endpoints.
 - **frontend**: A React.js application that consumes the backend API and serves the user interface.
+
+## Prerequisites
+- Git
+- Python 3.10 or higher
+- Node.js 22+ and npm/yarn 
+- Docker & Docker Compose (for containerized setup)
 
 ## Installation
 
