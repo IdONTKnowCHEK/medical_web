@@ -36,7 +36,7 @@ This repository contains two main services:
 The backend service loads environment variables from `backend/.env`. Copy and customize:
 
 ```bash
-# cd ../medical_web/backend
+# cd ~/medical_web/backend
 cp .env.example .env
 ```  
 ### Installing Ollama Model
@@ -77,13 +77,13 @@ You can run both services concurrently using tmux or separate terminals:
 
 1. Start backend service:
    ```bash
-   # cd ../medical_web/backend
+   # cd ~/medical_web/backend
    uvicorn app.main:app --host 0.0.0.0 --port 5000 --reload
    ```
 
 2. Start frontend development server:
    ```bash
-   # cd ../medical_web/frontend/app
+   # cd ~/medical_web/frontend/app
    npm run build
    npm run serve
    ```
@@ -95,6 +95,7 @@ Access the application at http://localhost:1025 (frontend) and http://localhost:
 Ensure Docker and Docker Compose are installed.
 
 ```bash
+# cd ~/medical_web
 docker-compose up --build
 ```
 
