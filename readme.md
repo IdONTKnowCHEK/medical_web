@@ -4,7 +4,6 @@ A full-stack application providing medical web services with a FastAPI backend a
 
 ## Table of Contents
 - [Overview](#overview)
-- [Installation](#installation)
 - [Prerequisites](#prerequisites)
 - [Environment Variables](#environment-variables)
 - [Running Locally](#running-locally)
@@ -23,7 +22,7 @@ This repository contains two main services:
 - Node.js 22+ and npm/yarn 
 - Docker & Docker Compose (for containerized setup)
 
-## Installation
+## Clone repo
 
 1. Clone the repository:
    ```bash
@@ -31,24 +30,6 @@ This repository contains two main services:
    cd medical_web
    ```
 
-2. Backend setup:
-   ```bash
-   cd backend
-   python -m venv venv
-   
-   # Linux
-   source venv/bin/activate
-   # Windows
-   venv/Scriptsactivate
-
-   pip install -r requirements.txt
-   ```
-
-3. Frontend setup:
-   ```bash
-   cd ../frontend/app
-   npm install
-   ```
 
 ## Environment Variables
 
@@ -70,6 +51,29 @@ ollama pull llama3.1:8b-instruct-fp16
 ## Running Locally
 
 You can run both services concurrently using tmux or separate terminals:
+
+### Install env
+
+1. Backend setup:
+   ```bash
+   cd backend
+   python -m venv venv
+   
+   # Linux
+   source venv/bin/activate
+   # Windows
+   venv/Scriptsactivate
+
+   pip install -r requirements.txt
+   ```
+
+2. Frontend setup:
+   ```bash
+   cd ../frontend/app
+   npm install
+   ```
+
+### Start Services
 
 1. Start backend service:
    ```bash
@@ -102,7 +106,8 @@ docker-compose up --build
 ```
 medcial_web/
 ├── backend/           # FastAPI application
-│   ├── app/           
+│   ├── app/      
+│   ├── .env
 │   ├── Dockerfile
 │   └── requirements.txt
 ├── frontend/          # React.js application
