@@ -35,13 +35,18 @@ This repository contains two main services:
    ```bash
    cd backend
    python -m venv venv
+   
+   # Linux
    source venv/bin/activate
+   # Windows
+   venv/Scriptsactivate
+
    pip install -r requirements.txt
    ```
 
 3. Frontend setup:
    ```bash
-   cd ../frontend
+   cd ../frontend/app
    npm install
    ```
 
@@ -50,7 +55,8 @@ This repository contains two main services:
 The backend service loads environment variables from `backend/.env`. Copy and customize:
 
 ```bash
-cp backend/.env.example backend/.env
+# cd ../medical_web/backend
+cp /.env.example backend/.env
 ```  
 ### Installing Ollama Model
 
@@ -67,17 +73,18 @@ You can run both services concurrently using tmux or separate terminals:
 
 1. Start backend service:
    ```bash
+   # cd ../medical_web/backend
    uvicorn app.main:app --host 0.0.0.0 --port 5000 --reload
    ```
 
 2. Start frontend development server:
    ```bash
-   npm install serve --save-dev
+   # cd ../medical_web/frontend/app
    npm run build
    npm run serve
    ```
 
-Access the application at http://localhost:8080 (frontend) and http://localhost:11304/docs (API docs).
+Access the application at http://localhost:1025 (frontend) and http://localhost:5000/docs (API docs).
 
 ## Running with Docker
 
