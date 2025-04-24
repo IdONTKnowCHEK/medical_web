@@ -1,0 +1,26 @@
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    env_file:
+      - ./backend/.env
+    expose:
+      - "5000"
+    networks:
+      - webnet
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "1025:80"
+    depends_on:
+      - backend
+    networks:
+      - webnet
+
+networks:
+  webnet:
+    driver: bridge
