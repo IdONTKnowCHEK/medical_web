@@ -1,6 +1,6 @@
 # Medcial Web Application
 
-A full-stack application providing medical web services with a FastAPI backend and a Vue.js frontend.
+A full-stack application providing medical web services with a FastAPI backend and a React.js frontend.
 
 ## Table of Contents
 - [Overview](#overview)
@@ -28,7 +28,7 @@ This repository contains two main services:
 1. Clone the repository:
    ```bash
    git clone https://github.com/IdONTKnowCHEK/medical_web
-   cd medcial_web
+   cd medical_web
    ```
 
 2. Backend setup:
