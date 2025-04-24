@@ -21,7 +21,7 @@ This repository contains two main services:
 1. Clone the repository:
    ```bash
    git clone https://github.com/IdONTKnowCHEK/medical_web
-   cd medcial_web
+   cd medical_web
    ```
 
 2. Backend setup:
